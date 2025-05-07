@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="images/images.jfif" alt="logo">
+                </a>
+                <ul id="main-menu">
+                    <li><a href="main.html">Trang chủ</a></li>
+                    <li><a href="#">Nội dung</a>
+                        <ul class="sub-menu">
+                            <li><a href="GenerateKey_Content.html">Tạo khóa</a></li>
+                            <li><a href="">Thuật toán AES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Mô phỏng</a>
+                        <ul class="sub-menu">
+                            <li><a href="GenerateKey_Demo.html">Mở rộng khóa mã hóa</a></li>
+                            <li><a href="">Mã hóa</a></li>
+                            <li><a href="">Giải mã</a></li>
+                        </ul>
+                    </li>
+                </ul>   
+            </nav>
+        </div>
+        <div id="wb-content">
+            <div id="content-box">
+                <div class="input-plaintext">
+                    <label for="plaintext">Nhập plaintext: </label>
+                    <input type="text" id = "plaintext" maxlength="16">
+                </div>
+                <div class="input-key">
+                    <label for="key">Nhập khóa: </label>
+                    <input type="text" id ="key" maxlength="16">
+                </div>
+                <button onclick="onGenerateKey()">Mã hóa</button>
+                <p id="message" class="error"></p>
+                <pre id="output"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/Generate_Key_AES.js"></script>
+</body>
+</html>
